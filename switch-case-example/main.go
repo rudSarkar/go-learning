@@ -25,4 +25,22 @@ func main() {
 	default:
 		fmt.Println("Today is workday")
 	}
+
+	// working with interface
+	// In Go, the interface{} type is a special type that can hold any value. It is a bit similar to the Object type in Java or the dynamic type in C#. You can use interface{} when you want to write a function that can accept values of any type.
+
+	whatType := func(ty interface{}) {
+		switch t := ty.(type) {
+		case bool:
+			fmt.Println("Boolean")
+		case int:
+			fmt.Println("Integer")
+		default:
+			fmt.Printf("The type of data is %T\n", t)
+		}
+	}
+
+	whatType(true)
+	whatType(1)
+	whatType("hey")
 }
