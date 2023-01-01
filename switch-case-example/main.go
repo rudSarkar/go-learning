@@ -36,7 +36,7 @@ func main() {
 		case int:
 			fmt.Println("Integer")
 		default:
-			fmt.Printf("The type of data is %T\n", t)
+			fmt.Printf("The type of data is: %T\n", t)
 		}
 	}
 
