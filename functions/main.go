@@ -46,4 +46,5 @@ func main() {
 
 	fmt.Println("Area:", num1)
 	fmt.Println("Perimeter:", num2)
+
 }
