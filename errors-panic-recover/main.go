@@ -29,4 +29,9 @@ func main() {
 
 	fmt.Println(file_name.Name()) // print file name just for example
 
+	// defer example
+	fmt.Println("Hello")
+	defer fmt.Println("Goodbye") // this line will be executed last
+	fmt.Println("World")
+
 }
