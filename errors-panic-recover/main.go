@@ -34,4 +34,17 @@ func main() {
 	defer fmt.Println("Goodbye") // this line will be executed last
 	fmt.Println("World")
 
+	// panic example
+	// The panic function in Go is used to halt the normal execution of a program and print a message to the console.
+
+	result := panic_div(10, 0)
+	fmt.Println(result)
+
+}
+
+func panic_div(x, y int) int {
+	if y == 0 {
+		panic("division by zero")
+	}
+	return x / y
 }
